@@ -16,7 +16,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://rinnette.web.app"),
+  metadataBase: new URL("https://rinnette.com"),
   title: {
     default: "Rinnette — Artist Portfolio",
     template: "%s — Rinnette",
