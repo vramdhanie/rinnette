@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import PortfolioGrid from "@/components/PortfolioGrid";
 
 export const metadata: Metadata = {
-  title: "Portfolio — Rinnette",
+  title: "Portfolio",
   description: "A selection of original works by Rinnette.",
 };
 

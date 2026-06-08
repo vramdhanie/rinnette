@@ -16,9 +16,46 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Rinnette — Artist Portfolio",
+  metadataBase: new URL("https://rinnette.web.app"),
+  title: {
+    default: "Rinnette — Artist Portfolio",
+    template: "%s — Rinnette",
+  },
   description:
     "The portfolio of Rinnette, a professional artist. Browse original works across painting and mixed media.",
+  applicationName: "Rinnette",
+  authors: [{ name: "Rinnette" }],
+  keywords: [
+    "Rinnette",
+    "artist",
+    "portfolio",
+    "painting",
+    "mixed media",
+    "fine art",
+  ],
+  openGraph: {
+    type: "website",
+    siteName: "Rinnette",
+    title: "Rinnette — Artist Portfolio",
+    description:
+      "The portfolio of Rinnette, a professional artist. Browse original works across painting and mixed media.",
+    url: "/",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Rinnette — Painter & Mixed Media",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Rinnette — Artist Portfolio",
+    description:
+      "The portfolio of Rinnette, a professional artist. Browse original works across painting and mixed media.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({

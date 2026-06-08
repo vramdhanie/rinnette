@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ZoomableImage from "@/components/ZoomableImage";
 
 export const metadata: Metadata = {
-  title: "About — Rinnette",
+  title: "About",
   description: "About the artist Rinnette — biography and artistic practice.",
 };
 
