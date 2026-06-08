@@ -1,12 +1,41 @@
+import Link from "next/link";
+import ZoomableImage from "@/components/ZoomableImage";
+
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start text-7xl">
-        RINNETTE
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <div>&copy; Rinnette</div>
-      </footer>
+    <div>
+      {/* Hero — a single large artwork that fits within the viewport and zooms on click. */}
+      <section className="mx-auto max-w-6xl px-6 pt-10 sm:pt-14">
+        <div className="mx-auto max-h-[85vh] w-full max-w-4xl">
+          <ZoomableImage
+            src="/images/hero.svg"
+            alt="Featured artwork by Rinnette"
+            caption="Featured work — click to view full screen"
+            className="max-h-[85vh] w-full object-contain"
+          />
+        </div>
+      </section>
+
+      {/* Intro */}
+      <section className="mx-auto max-w-3xl px-6 py-16 text-center">
+        <h1 className="font-serif text-4xl tracking-wide text-espresso sm:text-5xl">
+          Rinnette
+        </h1>
+        <p className="mt-3 text-sm uppercase tracking-[0.3em] text-clay">
+          Painter · Mixed Media
+        </p>
+        <p className="mx-auto mt-6 max-w-xl text-balance leading-relaxed text-mocha">
+          A short introductory statement about the artist and their work will
+          live here. Replace this placeholder with a sentence or two that sets
+          the tone for the collection.
+        </p>
+        <Link
+          href="/portfolio"
+          className="mt-8 inline-block border border-mocha px-8 py-3 text-sm uppercase tracking-widest text-mocha transition-colors hover:bg-mocha hover:text-cream"
+        >
+          View the Portfolio
+        </Link>
+      </section>
     </div>
   );
 }
