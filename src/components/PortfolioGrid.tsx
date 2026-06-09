@@ -1,3 +1,4 @@
+import Link from "next/link";
 import ZoomableImage from "@/components/ZoomableImage";
 import { artworks } from "@/data/portfolio";
 
@@ -20,6 +21,12 @@ export default function PortfolioGrid() {
             <p className="text-sm text-stone">
               {art.medium} · {art.year}
             </p>
+            <Link
+              href={`/portfolio/${art.id}`}
+              className="mt-2 inline-block text-sm uppercase tracking-widest text-mocha transition-colors hover:text-espresso"
+            >
+              View details →
+            </Link>
           </figcaption>
         </figure>
       ))}
