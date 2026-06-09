@@ -40,7 +40,7 @@ export default function ZoomableImage({ src, alt, className, caption }: Props) {
         type="button"
         onClick={() => setOpen(true)}
         aria-label={`Zoom in on ${alt}`}
-        className="group block w-full cursor-zoom-in overflow-hidden"
+        className="group block h-full w-full cursor-zoom-in overflow-hidden"
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
