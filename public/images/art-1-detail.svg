@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-label="Detail of artwork one">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e07a5f"/>
+      <stop offset="100%" stop-color="#3d405b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#g)"/>
+  <circle cx="820" cy="240" r="150" fill="#ffffff" opacity="0.22"/>
+  <rect x="120" y="430" width="380" height="110" fill="#000000" opacity="0.12"/>
+  <text x="50%" y="50%" fill="#ffffff" opacity="0.6" font-family="Georgia, serif" font-size="46" text-anchor="middle" dominant-baseline="middle">Detail · No. 1</text>
+</svg>

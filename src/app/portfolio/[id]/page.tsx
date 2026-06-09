@@ -1,12 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { compileMDX } from "next-mdx-remote/rsc";
 import ZoomableImage from "@/components/ZoomableImage";
+import { mdxComponents } from "@/components/mdx";
 import {
   artworks,
   getArtwork,
+  getArtworkContent,
+  getArtworkExcerpt,
   getAdjacentArtworks,
-} from "@/data/portfolio";
+} from "@/lib/portfolio";
 
 type Params = { id: string };
 
@@ -18,9 +22,10 @@ export function generateStaticParams(): Params[] {
 export function generateMetadata({ params }: { params: Params }): Metadata {
   const art = getArtwork(params.id);
   if (!art) return { title: "Artwork not found" };
+  const excerpt = getArtworkExcerpt(art.id);
   return {
     title: art.title,
-    description: `${art.title} — ${art.medium}, ${art.year}. ${art.description.split("\n\n")[0]}`,
+    description: `${art.title} — ${art.medium}, ${art.year}.${excerpt ? ` ${excerpt}` : ""}`,
     openGraph: {
       title: `${art.title} — Rinnette`,
       images: [{ url: art.src, alt: art.alt }],
@@ -28,12 +33,15 @@ export function generateMetadata({ params }: { params: Params }): Metadata {
   };
 }
 
-export default function ArtworkPage({ params }: { params: Params }) {
+export default async function ArtworkPage({ params }: { params: Params }) {
   const art = getArtwork(params.id);
   if (!art) notFound();
 
   const { prev, next } = getAdjacentArtworks(art.id);
-  const paragraphs = art.description.split("\n\n");
+  const { content } = await compileMDX({
+    source: getArtworkContent(art.id),
+    components: mdxComponents,
+  });
 
   return (
     <article className="mx-auto max-w-5xl px-6 py-10">
@@ -68,9 +76,7 @@ export default function ArtworkPage({ params }: { params: Params }) {
           )}
 
           <div className="mt-6 space-y-4 leading-relaxed text-mocha">
-            {paragraphs.map((paragraph, i) => (
-              <p key={i}>{paragraph}</p>
-            ))}
+            {content}
           </div>
         </div>
       </div>

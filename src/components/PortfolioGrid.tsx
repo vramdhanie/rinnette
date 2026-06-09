@@ -1,6 +1,6 @@
 import Link from "next/link";
 import ZoomableImage from "@/components/ZoomableImage";
-import { artworks } from "@/data/portfolio";
+import { artworks } from "@/lib/portfolio";
 
 export default function PortfolioGrid() {
   return (
