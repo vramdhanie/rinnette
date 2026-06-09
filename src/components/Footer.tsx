@@ -1,7 +1,9 @@
 import Link from "next/link";
 
 export default function Footer() {
-  const year = 2026; // static build — bump when content is finalised
+  // Server component — this evaluates at build time, so the static HTML
+  // is stamped with the year the site was last built.
+  const year = new Date().getFullYear();
 
   return (
     <footer className="border-t border-taupe/40 bg-sand/40">
