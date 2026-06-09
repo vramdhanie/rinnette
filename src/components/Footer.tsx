@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export default function Footer() {
-  const year = 2024; // static build — bump when content is finalised
+  const year = 2026; // static build — bump when content is finalised
 
   return (
     <footer className="border-t border-taupe/40 bg-sand/40">
