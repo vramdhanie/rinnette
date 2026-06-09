@@ -151,9 +151,9 @@ e.g. `public/images/piece-7/detail.jpg`).
   ![Detail of the lower-left corner](/images/piece-7/detail.jpg)
   ```
 
-See [`content/portfolio/piece-1.mdx`](content/portfolio/piece-1.mdx) for a working
-example using both a blockquote and a `<Figure>`. The styling of headings,
-quotes, links, lists and images is defined in
+The syntax above is all you need — the existing files in
+[`content/portfolio/`](content/portfolio) are working examples. The styling of
+headings, quotes, links, lists and images is defined in
 [`src/components/mdx.tsx`](src/components/mdx.tsx).
 
 ## Deployment
