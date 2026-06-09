@@ -8,9 +8,9 @@ export default function Home() {
       <section className="mx-auto max-w-6xl px-6 pt-10 sm:pt-14">
         <div className="mx-auto max-h-[85vh] w-full max-w-4xl">
           <ZoomableImage
-            src="/images/hero.svg"
-            alt="Featured artwork by Rinnette"
-            caption="Featured work — click to view full screen"
+            src="/images/roses-detail.webp"
+            alt="Detail of Roses, an impasto acrylic painting of pink roses with thickly textured petals on a deep blue background."
+            caption="Roses (detail) — click to view full screen"
             className="max-h-[85vh] w-full object-contain"
           />
         </div>
