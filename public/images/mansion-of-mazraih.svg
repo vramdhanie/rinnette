@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1050" width="1400" height="1050" role="img" aria-label="Mansion of Mazra&apos;ih placeholder">
+  <defs>
+    <linearGradient id="g-mansion-of-mazraih" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#b5704a" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#3a6ea5" stop-opacity="0.85"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="1050" fill="#e9e0d2"/>
+  <rect x="112" y="84" width="1176" height="882" fill="none" stroke="#8c857c" stroke-width="2.8000000000000003" stroke-dasharray="28 16.8"/>
+  <circle cx="700" cy="420" r="252" fill="url(#g-mansion-of-mazraih)"/>
+  <path d="M 224 651 L 700 462 L 1176 651 Z" fill="#b5704a" fill-opacity="0.35"/>
+  <text x="700" y="787.5" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="65" fill="#3a2f26">Mansion of Mazra&apos;ih</text>
+  <text x="700" y="871.5" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="29" letter-spacing="7.25" fill="#8c857c">PLACEHOLDER</text>
+</svg>

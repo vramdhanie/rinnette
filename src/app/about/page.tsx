@@ -15,9 +15,9 @@ export default function AboutPage() {
         {/* Portrait */}
         <div className="self-start overflow-hidden rounded-sm bg-sand">
           <ZoomableImage
-            src="/images/paria-falls.webp"
-            alt="Paria Falls — acrylic landscape of a waterfall spilling into a turquoise pool surrounded by dark rocks and lush green foliage."
-            caption="Paria Falls — acrylic on canvas, 2022"
+            src="/images/paria-falls.svg"
+            alt="Placeholder image for the About page — the artwork or portrait has not been added yet."
+            caption="Placeholder — replace with a portrait of the artist or a featured piece"
             className="max-h-[70vh] w-full object-contain"
           />
         </div>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1700 1000" width="1700" height="1000" role="img" aria-label="City at Night placeholder">
+  <defs>
+    <linearGradient id="g-city-at-night" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#233a5e" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#e0a33e" stop-opacity="0.85"/>
+    </linearGradient>
+  </defs>
+  <rect width="1700" height="1000" fill="#e9e0d2"/>
+  <rect x="136" y="80" width="1428" height="840" fill="none" stroke="#8c857c" stroke-width="3.4" stroke-dasharray="34 20.400000000000002"/>
+  <circle cx="850" cy="400" r="240" fill="url(#g-city-at-night)"/>
+  <path d="M 272 620 L 850 440 L 1428 620 Z" fill="#233a5e" fill-opacity="0.35"/>
+  <text x="850" y="750" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="62" fill="#3a2f26">City at Night</text>
+  <text x="850" y="830" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="28" letter-spacing="7" fill="#8c857c">PLACEHOLDER</text>
+</svg>
