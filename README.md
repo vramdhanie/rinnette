@@ -120,8 +120,13 @@ A missing required field fails the build with a clear message.
 3. Replace the placeholder copy in [`src/app/page.tsx`](src/app/page.tsx) and
    [`src/app/about/page.tsx`](src/app/about/page.tsx) with real text.
 
-The current images in `public/images/` are placeholder SVGs and should be
-swapped for the real artwork.
+Every file in `public/images/` is currently a **placeholder SVG**, one per piece,
+named after the MDX id (`roses.mdx` → `/images/roses.svg`). To drop in the real
+artwork, add the photo to `public/images/` and point the `image:` field at it —
+then update that piece's `alt:` text, which currently just says "placeholder".
+The home hero ([`src/app/page.tsx`](src/app/page.tsx)) and the About page image
+([`src/app/about/page.tsx`](src/app/about/page.tsx)) reference their images
+directly and need the same treatment.
 
 ### Adding supporting images to a write-up
 
